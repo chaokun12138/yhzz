@@ -10,20 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ccxz.common</groupId>
-    <artifactId>hyzz-registry</artifactId>
-
-    <dependencies>
-        <!--F版注册中心服务端-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
-        <!--spring-security-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>hyzz-common</artifactId>
 
 
 </project>

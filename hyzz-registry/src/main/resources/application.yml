@@ -2,13 +2,24 @@ server:
   port: 10010
 spring:
   application:
-    name: hyzz-registry
+    name: eureka-server
+  security:
+    user:
+      name: admin
+      password: 123456
+
+#eureka的属性有3类,server,client,instance
 eureka:
-  client:
-    fetch-registry: false #关闭表明自己是一个eureka服务
-    register-with-eureka: false #关闭 向自己注册 进行集群的时候需要开启
-    service-url:
-      defaultZone: http://127.0.0.1:${server.port}/eureka
   server:
-    enable-self-preservation: false # 关闭自我保护
-    eviction-interval-timer-in-ms: 5000 # 每隔 5 秒进行一次服务列表清理
+    enable-self-preservation: true
+    renewal-percent-threshold: 0.85
+    eviction-interval-timer-in-ms: 5000
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      #defaultZone: http://admin:123456@${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+

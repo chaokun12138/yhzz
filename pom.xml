@@ -10,6 +10,9 @@
     <packaging>pom</packaging>
     <modules>
         <module>hyzz-registry</module>
+        <module>hyzz-api-gateway</module>
+        <module>hyzz-config</module>
+        <module>hyzz-common</module>
     </modules>
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
