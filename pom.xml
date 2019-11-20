@@ -13,6 +13,7 @@
         <module>hyzz-api-gateway</module>
         <module>hyzz-config</module>
         <module>hyzz-common</module>
+        <module>hyzz-user</module>
     </modules>
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>

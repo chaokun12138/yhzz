@@ -12,5 +12,13 @@
     <groupId>com.ccxz.service</groupId>
     <artifactId>hyzz-user-interface</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
 
 </project>
