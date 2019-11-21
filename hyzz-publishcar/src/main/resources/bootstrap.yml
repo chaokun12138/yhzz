@@ -1,0 +1,32 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: publishcar-server
+  datasource:
+    url: jdbc:mysql://122.51.215.68:3306/hyzz
+    username: root
+    password: MyNewPass4!
+    driver-class-name: com.mysql.jdbc.Driver
+  profiles:
+    active: pro #对应的是某个(3种)环境的配置文件
+  cloud:
+    config:
+      discovery:
+        service-id: config-server #指定配置中心的服务名称
+        enabled: true
+      fail-fast: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123456@127.0.0.1:10010/eureka/
+#actuator设置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" #暴露所有端点,默认是info和health
+  endpoint:
+    health:
+      show-details: always
