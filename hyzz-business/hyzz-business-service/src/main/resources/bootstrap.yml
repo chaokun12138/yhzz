@@ -1,0 +1,33 @@
+server:
+  port: 10013
+spring:
+  application:
+    name: hyzz-service
+  datasource:
+    url: jdbc:mysql://122.51.215.68:3306/hyzz
+    username: root
+    password: MyNewPass4!
+    driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123456@127.0.0.1:10010/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+    instance-id: ${eureka.instance.ip-address}.${server.port}
+    lease-renewal-interval-in-seconds: 3
+    lease-expiration-duration-in-seconds: 10
+#actuator设置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" #暴露所有端点,默认是info和health
+  endpoint:
+    health:
+      show-details: always #默认是never

@@ -8,14 +8,19 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hyzz-common" />
         <module name="hyzz-registry" />
-        <module name="hyzz-api-gateway" />
+        <module name="hyzz-business-service" />
         <module name="hyzz-config" />
+        <module name="hyzz-business-interface" />
+        <module name="hyzz-api-gateway" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hyzz-api-gateway" options="-parameters" />
+      <module name="hyzz-business" options="-parameters" />
+      <module name="hyzz-business-interface" options="-parameters" />
+      <module name="hyzz-business-service" options="-parameters" />
       <module name="hyzz-common" options="-parameters" />
       <module name="hyzz-config" options="-parameters" />
       <module name="hyzz-registry" options="-parameters" />
