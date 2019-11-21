@@ -11,22 +11,15 @@
         <module name="hyzz-config" />
         <module name="hyzz-registry" />
         <module name="hyzz-user-interface" />
-        <module name="hyzz-user-service (1)" />
-      </profile>
-      <profile name="Annotation profile for hyzz-user-interface (1)" enabled="true">
-        <sourceOutputDir name="../../hyzz-user/hyzz-user-interface/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../hyzz-user/hyzz-user-interface/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="hyzz-user-interface (1)" />
-      </profile>
-      <profile name="Annotation profile for hyzz-dev" enabled="true">
-        <sourceOutputDir name="../../hyzz-login/login-service/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../hyzz-login/login-service/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="hyzz-user-service" />
+        <module name="login-interface" />
+        <module name="login-service" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="hyzz-user-interface (1)" target="1.8" />
+      <module name="hyzz-user-service (1)" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
