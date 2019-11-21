@@ -6,24 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hyzz-common" />
-        <module name="hyzz-registry" />
-        <module name="hyzz-user-interface (1)" />
-        <module name="hyzz-user-service (1)" />
-        <module name="hyzz-config" />
         <module name="hyzz-api-gateway" />
+        <module name="hyzz-common" />
+        <module name="hyzz-config" />
+        <module name="hyzz-registry" />
+        <module name="hyzz-user-interface" />
+        <module name="hyzz-user-service (1)" />
+      </profile>
+      <profile name="Annotation profile for hyzz-user-interface (1)" enabled="true">
+        <sourceOutputDir name="../../hyzz-user/hyzz-user-interface/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../../hyzz-user/hyzz-user-interface/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hyzz-user-interface (1)" />
       </profile>
       <profile name="Annotation profile for hyzz-dev" enabled="true">
         <sourceOutputDir name="../../hyzz-login/login-service/target/generated-sources/annotations" />
         <sourceTestOutputDir name="../../hyzz-login/login-service/target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hyzz-user-service" />
-      </profile>
-      <profile name="Annotation profile for hyzz-user-interface" enabled="true">
-        <sourceOutputDir name="../../hyzz-login/login-interface/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../../hyzz-login/login-interface/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="hyzz-user-interface" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

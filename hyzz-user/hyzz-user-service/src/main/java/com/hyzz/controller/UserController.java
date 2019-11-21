@@ -57,7 +57,7 @@ public class UserController {
     }
 
     /**
-     * 通过id修改用户信息,其他参数要与User类一致
+     * 通过id修改用户信息,其他参数要与User类的属性一致
      * @param user
      * @param id
      * @return
@@ -79,4 +79,6 @@ public class UserController {
         Boolean b = userService.deleteUserById(id);
         return ResponseEntity.ok(b);
     }
+
+
 }
