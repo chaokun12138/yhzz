@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://122.51.215.68/hyzz?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: MyNewPass4!
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+server:
+  port: 9003

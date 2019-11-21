@@ -8,9 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hyzz-common" />
         <module name="hyzz-registry" />
+        <module name="login-interface" />
+        <module name="hyzz-user-service" />
+        <module name="login-service" />
         <module name="hyzz-api-gateway" />
         <module name="hyzz-publishcar" />
         <module name="hyzz-config" />
+        <module name="hyzz-api-gateway" />
+        <module name="hyzz-user-interface" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,7 +25,12 @@
       <module name="hyzz-common" options="-parameters" />
       <module name="hyzz-config" options="-parameters" />
       <module name="hyzz-publishcar" options="-parameters" />
+      <module name="hyzz-login" options="-parameters" />
       <module name="hyzz-registry" options="-parameters" />
+      <module name="hyzz-user-interface" options="-parameters" />
+      <module name="hyzz-user-service" options="-parameters" />
+      <module name="login-interface" options="-parameters" />
+      <module name="login-service" options="-parameters" />
     </option>
   </component>
 </project>
