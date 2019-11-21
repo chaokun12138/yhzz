@@ -8,8 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hyzz-common" />
         <module name="hyzz-registry" />
-        <module name="hyzz-user-interface (1)" />
-        <module name="hyzz-user-service (1)" />
+        <module name="login-interface" />
+        <module name="login-service" />
         <module name="hyzz-config" />
         <module name="hyzz-api-gateway" />
       </profile>
