@@ -15,6 +15,8 @@ public class RegisterService {
      * @param user 用户注册信息
      */
     public Boolean register(User user) {
+        //授权(注册用户)为完善信息的用户
+
          return userMapper.insertSelective(user) != 0;
     }
 }
