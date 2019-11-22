@@ -15,6 +15,7 @@
         <module>hyzz-common</module>
         <module>hyzz-user</module>
         <module>hyzz-login</module>
+        <module>hyzz-business</module>
     </modules>
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
