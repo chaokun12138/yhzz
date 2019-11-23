@@ -18,7 +18,7 @@ public class LoginController {
      */
     @PostMapping("/login")
     public ResponseEntity<User> login(String tele,String password){
-        User user = loginService.login(tele,password);
-        return ResponseEntity.ok(user);
+        User login = loginService.login(tele,password);
+        return ResponseEntity.ok(login);
     }
 }

@@ -1,0 +1,5 @@
+server:
+  port: 9010
+spring:
+  redis:
+    host: 122.51.215.68

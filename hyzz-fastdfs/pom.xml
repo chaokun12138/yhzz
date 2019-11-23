@@ -10,13 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ccxz.service</groupId>
-    <artifactId>hyzz-login</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>login-interface</module>
-        <module>login-service</module>
-        <module>login-sms</module>
-    </modules>
+    <artifactId>hyzz-fastdfs</artifactId>
 
 
 </project>

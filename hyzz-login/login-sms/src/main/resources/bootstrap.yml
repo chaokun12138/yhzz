@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: sms-server
+  profiles:
+    active: pro #对应的是某个(3种)环境的配置文件
+  cloud:
+    config:
+      discovery:
+        service-id: config-server #指定配置中心的服务名称
+        enabled: true
+      fail-fast: true
+hyzz:
+  sms:
+    accessKeyId: LTAI4Fw9KZqEx4VgaeSZyiRV # 你自己的accessKeyId
+    accessKeySecret: Nyp4m6QsApWxu0tbZShMPmspKj4cpz # 你自己的AccessKeySecret
+    signName: 游戏中国 # 签名名称
+    verifyCodeTemplate: SMS_177248036 # 模板名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://admin:123456@localhost:10010/eureka/
+#actuator设置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" #暴露所有端点,默认是info和health
+  endpoint:
+    health:
+      show-details: always

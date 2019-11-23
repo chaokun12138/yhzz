@@ -3,23 +3,21 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-api-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hyzz-auth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-business" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-business/hyzz-business-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-business/hyzz-business-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-config" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hyzz-login" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hyzz-fastdfs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-login" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-login/login-interface" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hyzz-login/login-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-login/login-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hyzz-login/login-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hyzz-login/login-sms" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-registry" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hyzz-user" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hyzz-upload" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-user" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-user/hyzz-user-interface" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hyzz-user/hyzz-user-interface" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hyzz-user/hyzz-user-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hyzz-user/hyzz-user-service" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

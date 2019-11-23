@@ -6,29 +6,42 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hyzz-common" />
-        <module name="hyzz-registry" />
-        <module name="login-interface" />
-        <module name="hyzz-user-service" />
-        <module name="login-service" />
-        <module name="hyzz-config" />
-        <module name="hyzz-api-gateway" />
+        <module name="hyzz-business-service" />
         <module name="hyzz-user-interface" />
+        <module name="hyzz-api-gateway" />
+        <module name="hyzz-registry" />
+        <module name="login-service" />
+        <module name="hyzz-user-service" />
+        <module name="hyzz-config" />
+        <module name="hyzz-fastdfs" />
+        <module name="hyzz-common" />
+        <module name="login-sms" />
+        <module name="hyzz-upload" />
+        <module name="login-interface" />
+        <module name="hyzz-business-interface" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="hyzz-auth" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="hyzz-api-gateway" options="-parameters" />
+      <module name="hyzz-auth" options="-parameters" />
+      <module name="hyzz-business-interface" options="-parameters" />
+      <module name="hyzz-business-service" options="-parameters" />
       <module name="hyzz-common" options="-parameters" />
       <module name="hyzz-config" options="-parameters" />
+      <module name="hyzz-fastdfs" options="-parameters" />
       <module name="hyzz-login" options="-parameters" />
       <module name="hyzz-registry" options="-parameters" />
+      <module name="hyzz-upload" options="-parameters" />
       <module name="hyzz-user-interface" options="-parameters" />
       <module name="hyzz-user-service" options="-parameters" />
       <module name="login-interface" options="-parameters" />
       <module name="login-service" options="-parameters" />
+      <module name="login-sms" options="-parameters" />
     </option>
   </component>
 </project>
