@@ -18,7 +18,7 @@
         <module>hyzz-business</module>
         <module>hyzz-fastdfs</module>
         <module>hyzz-upload</module>
-        <module>hyzz-auth</module>
+        <module>hyzz-publishcar</module>
     </modules>
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
